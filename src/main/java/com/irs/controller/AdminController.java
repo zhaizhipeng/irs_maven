@@ -78,9 +78,9 @@ public class AdminController {
 		if(StringUtils.isEmpty(username)||StringUtils.isEmpty(password)||StringUtils.isEmpty(vcode)){
 			throw new RRException("参数不能为空");
 		}
-		if(!vcode.toLowerCase().equals(((String)req.getSession().getAttribute("kaptcha")).toLowerCase())){
+		/*if(!vcode.toLowerCase().equals(((String)req.getSession().getAttribute("kaptcha")).toLowerCase())){
 			return ResultUtil.error("验证码不正确");
-		}
+		}*/
 		try{
 			Subject subject = ShiroUtils.getSubject();
 			//md5加密

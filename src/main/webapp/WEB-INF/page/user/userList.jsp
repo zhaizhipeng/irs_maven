@@ -76,11 +76,13 @@
 				</shiro:hasPermission>
 				<div class="layui-inline">（支持模糊查询）</div>
 			</div>
+		</form>
 	</blockquote>
-	</form>
+
 	<div class="layui-form">
 		<table id="userList" lay-filter="userList"></table>
 	</div>
+
 	<script type="text/javascript" src="${ctx }/layui/layui.js"></script>
 	<script type="text/html" id="barEdit">
 		<shiro:hasPermission name="user:user:update">
@@ -108,7 +110,7 @@
    		 	<span style="color: #FF5722;">禁用</span>
   		{{#  } }}
 	</script>
-	</script>
+
 	<script>
 		layui
 				.config({
